@@ -80,6 +80,8 @@ ACCEPTED_FUNCTIONS = frozenset({
     "selection_duplicate",
     "move_line_up",
     "move_line_down",
+    "select_next_match",
+    "unselect_last_match",
     
     "open_file_in_new_window",
     "copy_path_to_file",
