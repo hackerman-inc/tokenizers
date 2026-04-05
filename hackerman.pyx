@@ -306,8 +306,8 @@ ACCEPTED_NAMES = {
     "show_annotations": "bool",
     "show_ui_borders": "bool",
     
-    "use_native_title_bar": "bool",    
-    "file_explorer_as_sidebar": "bool",
+    # "use_native_title_bar": "bool",    
+    # "file_explorer_as_sidebar": "bool",
 
     # -- cursor
 
@@ -324,7 +324,7 @@ ACCEPTED_NAMES = {
     "show_line_info": "bool",
     "show_model_metrics": "bool",
     "show_active_lexer": "bool",
-    "show_debug_info": "bool",
+    # "show_debug_info": "bool",
 
     # -- misc
 
