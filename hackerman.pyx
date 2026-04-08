@@ -48,6 +48,7 @@ ACCEPTED_FUNCTIONS = frozenset({
     "save_file_as",
     "close_file",
     "close_other_files",
+    "reopen_last_closed_file",
     
     "fold_line",
     "fold_all",
@@ -57,8 +58,9 @@ ACCEPTED_FUNCTIONS = frozenset({
     "zoom_out",
     "toggle_split_editor",
     "show_file_explorer",
-    "show_function_explorer",
+    "show_outline_panel",
     "show_buffer_explorer",
+    "show_function_explorer",
     "open_terminal_at_file",    
     "open_config_file",
     "open_scripts_file",
@@ -233,7 +235,7 @@ ACCEPTED_FUNCTIONS = frozenset({
     "comment",
     "special",
     "type",
-    "boolean",
+    "constant",
     "builtin",
     
     "_highlight",
@@ -627,22 +629,6 @@ cdef class Lexer:
 
     def colors(self):
         return (DEFAULT, KEYWORD, CLASS, NAME, STRING, NUMBER, COMMENT)
-
-    # for outline panel
-
-    def _is_class(self, str line_text):
-        cdef str stripped = line_text.strip()
-
-        if not stripped.startswith("["):
-            return False
-
-        return [("keyword", stripped)]
-
-    cpdef bint _is_function_name(self, str line_text):
-        return False
-
-    cpdef bint _is_type_def(self, str line_text):
-        return False
 
     # tokenizer
 
