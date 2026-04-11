@@ -338,6 +338,8 @@ ACCEPTED_NAMES = {
     "minimap_width": "int",
     
     "open_on_largest_screen": "bool",
+    "dim_non_active_editors": "bool",
+    "fixed_line_number_width": "bool",
 
     "eol_mode": ["crlf", "cr", "lf"],
     "eol_symbols_visible": "bool",
