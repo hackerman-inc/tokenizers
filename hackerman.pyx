@@ -335,6 +335,8 @@ ACCEPTED_NAMES = {
     "ui_font_size": "int",
     
     "scrollbar_width": "int",
+    "minimap_width": "int",
+    
     "open_on_largest_screen": "bool",
 
     "eol_mode": ["crlf", "cr", "lf"],
