@@ -94,6 +94,7 @@ ACCEPTED_FUNCTIONS = frozenset({
     "show_license_info",
     "open_diff_from_git",
     "open_diff_from_buffers",
+    "diff_open_buffers_word_indicators",
     # "show_git_status",
     "go_to_line",
     "tear_off_buffer",
