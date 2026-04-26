@@ -73,7 +73,6 @@ ACCEPTED_FUNCTIONS = frozenset({
     "uppercase",
     "cancel",
     "newline",
-    "newline_at_end_of_line",
     "tab",
     "backtab",
     "center_on_cursor",
@@ -84,6 +83,8 @@ ACCEPTED_FUNCTIONS = frozenset({
     "move_line_down",
     "select_next_match",
     "unselect_last_match",
+    "insert_line_below",
+    "insert_line_above",
     
     "open_file_in_new_window",
     "copy_path_to_file",
